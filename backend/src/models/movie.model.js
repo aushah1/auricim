@@ -4,7 +4,7 @@ const movieSchema = new mongoose.Schema({
   title: { type: String, required: true },
   releaseDate: { type: String },
   description: { type: String },
-  posterPath: { type: String },
+  imageUrl: { type: String },
   genres: [{ type: String }],
   category: { type: String },
   trailerLink: { type: String },

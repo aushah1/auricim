@@ -12,6 +12,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@imagekit/javascript": "^5.2.2",
+    "@imagekit/nodejs": "^7.3.0",
     "axios": "^1.13.6",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
@@ -21,6 +23,7 @@
     "express-validator": "^7.3.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.4",
+    "multer": "^2.1.1",
     "nodemon": "^3.1.14"
   }
 }
