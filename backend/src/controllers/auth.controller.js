@@ -41,7 +41,7 @@ async function registerController(req, res) {
 
   res.status(201).json({
     message: "User Registered successfully",
-    user
+    user,
   });
 }
 
@@ -105,8 +105,19 @@ async function getMeController(req, res) {
   });
 }
 
+async function logoutController(req, res) {
+  const token = req.cookies.token;
+
+  res.clearCookie("token");
+
+  res.status(200).json({
+    message: "logout successfully.",
+  });
+}
+
 module.exports = {
   registerController,
   loginController,
   getMeController,
+  logoutController,
 };

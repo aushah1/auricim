@@ -1,0 +1,39 @@
+server
+│
+├── config
+│   └── db.js
+│
+├── controllers
+│   ├── auth.controller.js ✅
+│   ├── user.controller.js 
+│   ├── movie.controller.js ✅
+│   ├── favorite.controller.js
+│   └── history.controller.js
+│
+├── models
+│   ├── User.js ✅
+│   ├── Movie.js 
+│   ├── Favorite.js
+│   └── History.js
+│
+├── routes
+│   ├── auth.routes.js
+│   ├── user.routes.js
+│   ├── movie.routes.js
+│   ├── favorite.routes.js
+│   └── history.routes.js
+│
+├── middleware
+│   ├── auth.middleware.js
+│   ├── admin.middleware.js
+│   └── error.middleware.js
+│
+├── services
+│   └── tmdb.service.js
+│
+├── utils
+│   ├── generateToken.js
+│   └── constants.js
+│
+├── app.js
+└── server.js
