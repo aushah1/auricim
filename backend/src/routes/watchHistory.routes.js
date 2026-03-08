@@ -6,14 +6,9 @@ const watchHistoryRouter = Router();
 
 // /api/watch-history
 
-watchHistoryRouter.get(
-  "/",
-  identifyUser,
-  watchHistoryController.getWatchHistoryController,
-);
+watchHistoryRouter.get("/", watchHistoryController.getWatchHistoryController);
 watchHistoryRouter.post(
   "/add/:id",
-  identifyUser,
   watchHistoryController.addToWatchHistoryController,
 );
 
