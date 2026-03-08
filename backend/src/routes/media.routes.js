@@ -2,11 +2,11 @@ const { Router } = require("express");
 const mediaController = require("../controllers/media.controller");
 
 const movieRouter = Router();
-// /media routes
+// /api/media 
 
 // movies
 
-movieRouter.get("/movies/trending", mediaController.getTrendingMoviesController);
+movieRouter.get("/movies/trending" , mediaController.getTrendingMoviesController);
 movieRouter.get("/movies/popular", mediaController.getPopularMoviesController);
 movieRouter.get("/movies/:id/videos", mediaController.getMovieVideos);
 movieRouter.get("/movies/:id/details", mediaController.getMovieDetails);
